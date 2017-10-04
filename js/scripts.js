@@ -70,12 +70,12 @@ function startTime() {
 function highlightButton(but){
 	if(but == "sharp"){
 		document.getElementsByClassName("button#")[0].style.border  = "2px solid #1bc4fc"
-		timeout=setTimeout(function(){
+		setTimeout(function(){
 			clearHighlight("button#")
 		}, DELAY_THRESHOLD/4)
 	}else{
 		document.getElementsByClassName("button"+but.toString())[0].style.border  = "2px solid #1bc4fc"
-		timeout=setTimeout(function(){
+		setTimeout(function(){
 			clearHighlight("button"+but.toString())
 		}, DELAY_THRESHOLD/4)
 	}
