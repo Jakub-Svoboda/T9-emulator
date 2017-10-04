@@ -1,12 +1,11 @@
 var t9 = true;
 
 function clicked_del(){
-	var str = document.getElementById("screen").innerHTML;
+	var str = document.getElementById("text").innerHTML;
 	if (str.length > 0){
 		str = str.slice(0,-1);	
-		document.getElementById("screen").innerHTML = str;
+		document.getElementById("text").innerHTML = str;
 	}
-	
 }
 function clicked_t9(){
 	t9=!t9;
@@ -16,7 +15,7 @@ function clicked_1(){
 	
 }
 function clicked_2(){
-	document.getElementById("screen").innerHTML = document.getElementById("screen").innerHTML+"a";
+	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML+"a";
 }
 function clicked_3(){
 	
@@ -46,5 +45,6 @@ function clicked_0(){
 	
 }
 function clicked_sharp(){
-
+	var str = document.getElementById("text").innerHTML;
+	document.getElementById("text").innerHTML = str + " ";
 }
