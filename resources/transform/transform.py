@@ -28,6 +28,6 @@ if len(sys.argv)==3:
 	inFile=open(sys.argv[1], 'r')
 	outFile=open(sys.argv[2], 'w')
 	for word in inFile:
-		outFile.write(word[0:len(word)-1:] + "," + wordTransform(word)+ ";\n")
+		outFile.write(word[0:len(word)-1:] + "," + wordTransform(word)+ ";")
 	inFile.close()
 	outFile.close()
