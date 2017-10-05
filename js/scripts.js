@@ -81,6 +81,11 @@ function startTime() {
 	}
 	
 }
+function cycleWords(){
+	var word = findLast()
+	var code = getCode(word)
+	//console.log(words.findKey(words, {"basic"}))
+}
 function getCode(word){
 	var code = ""
 	for (var i = 0, len = word.length; i < len; i++) {
@@ -500,7 +505,7 @@ function clicked_9(){
 	}
 }
 function clicked_star(){
-	
+	cycleWords()
 }
 function clicked_0(){
 		clearSpace()
@@ -513,7 +518,6 @@ function clicked_0(){
 			activeTyping=false
 			addSpace()
 		}, DELAY_THRESHOLD)
-	
 }
 function clicked_sharp(){
 	clearSpace()
