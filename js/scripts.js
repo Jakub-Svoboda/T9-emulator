@@ -95,11 +95,11 @@ function clearUnderline(){
 function startTime() {
 	startTime = new Date()
 	if(t9){
-		document.getElementById("buttont9").style.backgroundColor = "#8cf442"
+		document.getElementById("buttont9").style.backgroundColor = "#FFC300"
         document.getElementById("button_star").style.backgroundColor = "#ffffff"
 	}else{
 		document.getElementById("buttont9").style.backgroundColor = "#FFFFFF"
-        document.getElementById("button_star").style.backgroundColor = "#777777"
+        document.getElementById("button_star").style.backgroundColor = "#bbbbbb"
 	}
 }
 
@@ -168,10 +168,12 @@ function tnine(){
 function clicked_t9(){
 	t9=!t9
 	if(t9){
-        document.getElementById("buttont9").style.backgroundColor = "#8cf442"
-		document.getElementById("button_star").style.backgroundColor = "#FFFFFF"
+        document.getElementById("buttont9").style.backgroundColor = "#FFC300"
+		document.getElementById("button_star").style.color = "#000000"
+        document.getElementById("button_star").style.borderColor = "#000000"
 	}else{
-		document.getElementById("button_star").style.backgroundColor = "#777777"
+		document.getElementById("button_star").style.color = "#BBBBBB"
+        document.getElementById("button_star").style.borderColor = "#BBBBBB"
         document.getElementById("buttont9").style.backgroundColor = "#ffffff"
 	}
 }

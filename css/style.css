@@ -17,6 +17,7 @@
 	width: 68px;
 }
 .mobile{
+	background-color: #0ED5F1;
 	width: 330px;
 	height: 625px;
 	border: 2px solid #000000;
@@ -33,6 +34,7 @@
     border: 2px solid #000000;
 	border-radius: 8px;
 	margin: 5px;
+	background-color: #ffffff;
 }
 .keyboard{
 	margin: 5px;
@@ -85,7 +87,12 @@
 	font-size:18px;
 }
 .button_star{
+	transition: border .3s, color .3s;
+}
+
+#buttont9{
 	transition: background .3s;
+	background-color: #FFBB0D;
 }
 /*source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
 .noselect {
