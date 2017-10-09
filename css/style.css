@@ -85,7 +85,7 @@
 	font-size:18px;
 }
 .button_star{
-	transition: background 1s;
+	transition: background .3s;
 }
 /*source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
 .noselect {
