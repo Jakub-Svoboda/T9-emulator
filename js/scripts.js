@@ -519,8 +519,10 @@ function clicked_9(){
 	}
 }
 function clicked_star(){
-	t9_counter++
-	tnine()
+	if(t9) {
+        t9_counter++
+        tnine()
+    }
 }
 function clicked_0(){
 		clearSpace()
