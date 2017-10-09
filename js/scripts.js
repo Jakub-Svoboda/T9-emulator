@@ -96,8 +96,10 @@ function startTime() {
 	startTime = new Date()
 	if(t9){
 		document.getElementById("buttont9").style.backgroundColor = "#8cf442"
+        document.getElementById("button_star").style.backgroundColor = "#ffffff"
 	}else{
 		document.getElementById("buttont9").style.backgroundColor = "#FFFFFF"
+        document.getElementById("button_star").style.backgroundColor = "#777777"
 	}
 }
 
@@ -166,9 +168,11 @@ function tnine(){
 function clicked_t9(){
 	t9=!t9
 	if(t9){
-		document.getElementById("buttont9").style.backgroundColor = "#8cf442"
+        document.getElementById("buttont9").style.backgroundColor = "#8cf442"
+		document.getElementById("button_star").style.backgroundColor = "#FFFFFF"
 	}else{
-		document.getElementById("buttont9").style.backgroundColor = "#FFFFFF"
+		document.getElementById("button_star").style.backgroundColor = "#777777"
+        document.getElementById("buttont9").style.backgroundColor = "#ffffff"
 	}
 }
 
