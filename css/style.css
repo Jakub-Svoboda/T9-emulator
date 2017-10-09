@@ -10,6 +10,12 @@
 	font-weight: bold;
 	font-size: 12pt;
 }
+.upperbut{
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 0px;
+	width: 68px;
+}
 .mobile{
 	width: 330px;
 	height: 625px;
@@ -18,7 +24,7 @@
 	padding: 5px;
 	position: relative;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 15px;
 }
 .screen{
 	width: 305px;
@@ -32,11 +38,37 @@
 	margin: 5px;
 	margin-top:5px;
 }
+.controls{
+	margin: auto;
+	margin-top:15px;
+	width: 330px;
+	height: 55px;
+	border: 2px solid #000000;
+	border-radius: 8px;
+	padding-left:5px;
+}
 .container{
 	position: relative;
 }
 .invisible{
 	visibility: hidden;
+}
+.wpm{
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+.wpm:hover{
+	cursor:default;
+}
+.timer{
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+.timer:hover{
+	cursor:default;
+}
+.play{
+	margin-bottom:0px;
 }
 #text{
 	word-wrap: break-word;
