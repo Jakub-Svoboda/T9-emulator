@@ -81,6 +81,9 @@
 .button:focus {
   outline: none;
 }
+.buttonsharp{
+	font-size:18px;
+}
 /*source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
