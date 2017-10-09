@@ -558,9 +558,11 @@ function clicked_clear(){
 	addSpace()
 	clearTimeout(t);
 	document.getElementsByClassName("timer")[0].innerHTML = "00:00"
+	document.getElementsByClassName("wpm")[0].innerHTML = "0 cps"
 	seconds=minutes=0
 }
 function addSecond() {
+	calculateCps()
     seconds++;
     if (seconds >= 60) {
         seconds = 0;
@@ -583,13 +585,28 @@ function clicked_play(){
 		str="⏹"				//square
 		timer();
 	}else{
+		calculateCps()
 		str="▶"				//arrow
 		clearTimeout(t);
+		
 	}
 	document.getElementsByClassName("play")[0].innerHTML=str
 	stopwatchStart= new Date()
 	
 	
 }
+function calculateCps(){
+	str = document.getElementById("text").innerHTML
+	len = str.length
+	cps = Math.round(len/(seconds + minutes*60))
+	if(cps > 9000) cps =0
+	document.getElementsByClassName("wpm")[0].innerHTML = cps+" cps"
+	
+}
 
 window.onload = startTime
+
+
+
+
+
