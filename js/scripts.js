@@ -4,6 +4,8 @@ var startTime, endTime
 var lastPressed=10
 var numOfSamePresses=0
 var activeTyping=false
+var timeout,t
+var seconds=0,minutes=0
 var timeout
 var t9_counter=0
 var stopwatchStart,stopwatchEnd
@@ -556,16 +558,40 @@ function clicked_clear(){
 	clearTimeout(timeout)
 	document.getElementById("text").innerHTML = ""
 	addSpace()
+	clearTimeout(t);
+	document.getElementsByClassName("timer")[0].innerHTML = "00:00"
+	seconds=minutes=0
+}
+function addSecond() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+    }
+	var str= ""
+	if(minutes<10) str+="0"
+	str= str + minutes+":"
+	if(seconds<10) str+="0"
+	str+=seconds
+    document.getElementsByClassName("timer")[0].innerHTML = str
+    timer();
+}
+function timer() {
+    t = setTimeout(addSecond, 1000);
 }
 function clicked_play(){
 	str=document.getElementsByClassName("play")[0].innerHTML
 	if (str ==="▶"){		//arrow
 		str="⏹"				//square
+		timer();
 	}else{
 		str="▶"				//arrow
+		clearTimeout(t);
 	}
 	document.getElementsByClassName("play")[0].innerHTML=str
 	stopwatchStart= new Date()
+	
+	
 }
 
 window.onload = startTime
