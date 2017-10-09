@@ -560,8 +560,9 @@ function clicked_clear(){
 	addSpace()
 	clearTimeout(t);
 	document.getElementsByClassName("timer")[0].innerHTML = "00:00"
-	document.getElementsByClassName("wpm")[0].innerHTML = "0 cps"
+	document.getElementsByClassName("wpm")[0].innerHTML = "0 cpm"
 	seconds=minutes=0
+	document.getElementsByClassName("play")[0].innerHTML="▶"
 }
 function addSecond() {
 	calculateCps()
@@ -600,9 +601,9 @@ function clicked_play(){
 function calculateCps(){
 	str = document.getElementById("text").innerHTML
 	len = str.length
-	cps = Math.round(len/(seconds + minutes*60))
+	cps = Math.round(len/(seconds/60 + minutes))
 	if(cps > 9000) cps =0
-	document.getElementsByClassName("wpm")[0].innerHTML = cps+" cps"
+	document.getElementsByClassName("wpm")[0].innerHTML = cps+" cpm"
 	
 }
 
