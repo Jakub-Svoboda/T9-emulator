@@ -10,6 +10,16 @@
 	font-weight: bold;
 	font-size: 12pt;
 }
+
+.button0:hover{
+	cursor: default;
+}
+
+.button0{
+	border-color: #bbbbbb;
+	color: #bbbbbb;
+}
+
 .upperbut{
 	margin-top: 5px;
 	margin-left: 5px;
@@ -41,6 +51,7 @@
 	margin-top:5px;
 }
 .controls{
+	background-color: #0CBDD6;
 	margin: auto;
 	margin-top:15px;
 	width: 330px;

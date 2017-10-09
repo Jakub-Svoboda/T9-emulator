@@ -28,9 +28,8 @@ for(var i =0; i<dictArray.length;i++){
 
 this.addEventListener('keydown', (event) => {
 
-	if (event.keyCode == 96){
-    	clicked_0()
-	}else if (event.keyCode == 97) { 						//1
+
+	if (event.keyCode == 97) { 						//1
         clicked_7()
     }else if (event.keyCode == 98) { 				//2
         clicked_8()
@@ -130,12 +129,19 @@ function getCode(word){
 }
 function highlightButton(but){
 	if(but == "sharp"){
-		document.getElementsByClassName("button#")[0].style.border  = "2px solid #1bc4fc"
+		document.getElementsByClassName("button#")[0].style.border  = "2px solid #FFBB0D"
 		setTimeout(function(){
 			clearHighlight("button#")
 		}, DELAY_THRESHOLD/4)
-	}else{
-		document.getElementsByClassName("button"+but.toString())[0].style.border  = "2px solid #1bc4fc"
+	}
+	else if(but == "star"){
+            document.getElementsByClassName("button_star")[0].style.border  = "2px solid #FFBB0D"
+            setTimeout(function(){
+                clearHighlight("button_star")
+            }, DELAY_THRESHOLD/4)
+	}
+	else{
+		document.getElementsByClassName("button"+but.toString())[0].style.border  = "2px solid #FFBB0D"
 		setTimeout(function(){
 			clearHighlight("button"+but.toString())
 		}, DELAY_THRESHOLD/4)
@@ -528,6 +534,7 @@ function clicked_9(){
 }
 function clicked_star(){
 	if(t9) {
+		highlightButton("star")
         t9_counter++
         tnine()
     }
