@@ -116,4 +116,7 @@
                                   supported by Chrome and Opera */
 }
 
+div a{
+	visibility: hidden;
+}
 
