@@ -90,6 +90,7 @@
 	word-wrap: break-word;
 	margin: 8px;
 	font-size: 14pt;
+	display:block;
 }
 .button:focus {
   outline: none;
