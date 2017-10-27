@@ -49,7 +49,7 @@ this.addEventListener('keydown', (event) => {
         clicked_3()
     }else if (event.keyCode == 8) { 				//delete
         clicked_del()
-    }else if (event.keyCode == 107) { 				//space
+    }else if (event.keyCode == 96) { 				//space
         clicked_sharp()
     }else if (event.keyCode == 110) { 				//space
     clicked_star()
