@@ -1,9 +1,72 @@
+body {
+	/* background: #e2e2e3; */
+/* background: #eeeeee; */
+/*background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 57%);*/
+/* background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 57%); */
+/* background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 57%); */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );*/
+background: url(img/maxresdefault.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+@media screen and (min-device-width: 1400px) {
+		.mobile {
+			height: 100%;
+		}
+		.screen{
+			min-height: 500px;
+			height: 50%;
+		}
+}
+@media screen and (max-device-width: 1400px) {
+		.mobile {
+			height: 100%;
+		}
+		.screen{
+			min-height: 300px;
+			height: 50%;
+		}
+}
+
+@media screen and (max-device-width: 1300px) {
+		.mobile {
+			height: 100%;
+		}
+		.screen{
+			min-height: 250px;
+			height: 50%;
+		}
+}
+@media screen and (max-device-width: 1200px) {
+		.mobile {
+			height: 100%;
+		}
+		.screen{
+			min-height: 225px;
+			height: 50%;
+		}
+}
+
+
+@media screen and (max-width: 768px) {
+		.mobile {
+			height: 100%;
+		}
+		.screen{
+			min-height: 200px;
+			height: 50%;
+		}
+}
+
 .button{
 	width: 95px;
 	height: 40px;
 	background-color: white;
-    color: black;
-    border: 2px solid #000000;
+  color: black;
+  border: 2px solid #000000;
 	border-radius: 8px;
 	margin: 2px;
 	margin-top:5px;
@@ -27,33 +90,33 @@
 	width: 68px;
 }
 .mobile{
-	background-color: #0ED5F1;
+	background-color: #44a9b8;
 	width: 330px;
-	height: 625px;
+	/*height: 625px;*/
 	border: 2px solid #000000;
 	border-radius: 8px;
 	padding: 5px;
 	position: relative;
 	margin: auto;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .screen{
 	width: 305px;
-	height: 360px;
+	/*height: 360px;*/
 	color: black;
-    border: 2px solid #000000;
+  border: 2px solid #000000;
 	border-radius: 8px;
 	margin: 5px;
-	background-color: #ffffff;
+	background-color: #f9f9f9;
 }
 .keyboard{
 	margin: 5px;
 	margin-top:5px;
 }
 .controls{
-	background-color: #0CBDD6;
+	background-color: #028497;
 	margin: auto;
-	margin-top:15px;
+	margin-top:10px;
 	width: 330px;
 	height: 55px;
 	border: 2px solid #000000;
@@ -104,7 +167,7 @@
 
 #buttont9{
 	transition: background .3s;
-	background-color: #FFBB0D;
+	background-color: #89ff40;
 }
 /*source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
 .noselect {
@@ -120,4 +183,3 @@
 div a{
 	visibility: hidden;
 }
-
