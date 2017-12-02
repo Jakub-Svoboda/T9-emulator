@@ -64,9 +64,9 @@ background-size: cover;
 .button{
 	width: 95px;
 	height: 40px;
-	background-color: white;
-  color: black;
-  border: 2px solid #000000;
+	background-color: #002eaf;
+  color: #f1f1f1;
+  border: 2px solid black;
 	border-radius: 8px;
 	margin: 2px;
 	margin-top:5px;
@@ -90,7 +90,19 @@ background-size: cover;
 	width: 68px;
 }
 .mobile{
-	background-color: #44a9b8;
+	/*background-color: #44a9b8;*/
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #44A9B8),
+		color-stop(1, #CFF9FF)
+	);
+background-image: -o-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+background-image: -moz-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+background-image: -webkit-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+background-image: -ms-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+background-image: linear-gradient(to bottom, #44A9B8 0%, #CFF9FF 100%);
 	width: 330px;
 	/*height: 625px;*/
 	border: 2px solid #000000;
@@ -167,7 +179,8 @@ background-size: cover;
 
 #buttont9{
 	transition: background .3s;
-	background-color: #89ff40;
+	background-color: #ffc300;
+	color: black;
 }
 /*source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
 .noselect {

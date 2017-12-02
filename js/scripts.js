@@ -22,7 +22,7 @@ for(var i =0; i<dictArray.length;i++){
     else{
 		words[tmp[1]]=new Array(tmp[0])
 	}
-	
+
 }
 
 
@@ -56,7 +56,7 @@ this.addEventListener('keydown', (event) => {
 	} else if (event.keyCode == 111) { 				//space
     clicked_t9()
 	}
-	
+
 })
 
 function findLast(){
@@ -95,7 +95,8 @@ function startTime() {
 	startTime = new Date()
 	if(t9){
 		document.getElementById("buttont9").style.backgroundColor = "#FFC300"
-        document.getElementById("button_star").style.backgroundColor = "#ffffff"
+        document.getElementById("button_star").style.backgroundColor = "#ffd859"
+				document.getElementById("button_star").style.color = "#000000"
 	}else{
 		document.getElementById("buttont9").style.backgroundColor = "#FFFFFF"
         document.getElementById("button_star").style.backgroundColor = "#bbbbbb"
@@ -124,7 +125,7 @@ function getCode(word){
 			code+="9"
 		}
 	}
-	
+
 	return code
 }
 function highlightButton(but){
@@ -146,7 +147,7 @@ function highlightButton(but){
 			clearHighlight("button"+but.toString())
 		}, DELAY_THRESHOLD/4)
 	}
-	
+
 }
 function clearHighlight(but){
 	document.getElementsByClassName(but)[0].style.border = "2px solid #000000"
@@ -157,7 +158,7 @@ function clicked_del(){
 	clearUnderline()
 	var str = document.getElementById("text").innerHTML
 	if (str.length > 0){
-		str = str.slice(0,-1)	
+		str = str.slice(0,-1)
 		document.getElementById("text").innerHTML = str
 	}
 	addSpace()
@@ -175,16 +176,18 @@ function clicked_t9(){
 	t9=!t9
 	if(t9){
         document.getElementById("buttont9").style.backgroundColor = "#FFC300"
+				document.getElementById("button_star").style.backgroundColor = "#ffd859"
 		document.getElementById("button_star").style.color = "#000000"
         document.getElementById("button_star").style.borderColor = "#000000"
 	}else{
 		document.getElementById("button_star").style.color = "#BBBBBB"
         document.getElementById("button_star").style.borderColor = "#BBBBBB"
         document.getElementById("buttont9").style.backgroundColor = "#ffffff"
+				document.getElementById("button_star").style.backgroundColor = "#ffffff"
 	}
 }
 
-function clicked_1(){	
+function clicked_1(){
 	highlightButton(1)
 	clearSpace()
 	lastPressed = 1
@@ -203,7 +206,7 @@ function clicked_2(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 2 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -235,7 +238,7 @@ function clicked_2(){
 		document.getElementById("text").innerHTML += "a"
 		tnine()
 		addSpace()
-	}	
+	}
 }
 function clicked_3(){
 	clearSpace()
@@ -244,7 +247,7 @@ function clicked_3(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 3 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -277,7 +280,7 @@ function clicked_3(){
 		tnine()
 		addSpace()
 	}
-	
+
 }
 function clicked_4(){
 	clearSpace()
@@ -286,7 +289,7 @@ function clicked_4(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 4 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -319,7 +322,7 @@ function clicked_4(){
 		tnine()
 		addSpace()
 	}
-	
+
 }
 function clicked_5(){
 	clearSpace()
@@ -328,7 +331,7 @@ function clicked_5(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 5 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -369,7 +372,7 @@ function clicked_6(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 6 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -400,7 +403,7 @@ function clicked_6(){
 	}else{
 		document.getElementById("text").innerHTML += "m"
 		tnine()
-		addSpace()		
+		addSpace()
 	}
 }
 function clicked_7(){
@@ -410,7 +413,7 @@ function clicked_7(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 7 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -428,7 +431,7 @@ function clicked_7(){
 			document.getElementById("text").innerHTML = str+"r"
 		}else if(lastPressed==7 && numOfSamePresses%4 == 3){					//fast press and fourth letter
 			str=str.slice(0,-1)
-			document.getElementById("text").innerHTML = str+"s"	
+			document.getElementById("text").innerHTML = str+"s"
 		}else{
 			str=str.slice(0,-1)												//fast press back to first letter
 			document.getElementById("text").innerHTML = str+"p"
@@ -444,7 +447,7 @@ function clicked_7(){
 	}else{
 		document.getElementById("text").innerHTML += "p"
 		tnine()
-		addSpace()		
+		addSpace()
 	}
 }
 function clicked_8(){
@@ -454,7 +457,7 @@ function clicked_8(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 8 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -485,7 +488,7 @@ function clicked_8(){
 	}else{
 		document.getElementById("text").innerHTML += "t"
 		tnine()
-		addSpace()		
+		addSpace()
 	}
 }
 function clicked_9(){
@@ -495,7 +498,7 @@ function clicked_9(){
 	clearUnderline()
 	if(t9 == false){
 		endTime = new Date()
-		var timeDiff = endTime - startTime 
+		var timeDiff = endTime - startTime
 		if (lastPressed == 9 && timeDiff < DELAY_THRESHOLD){
 			numOfSamePresses++
 		}else{
@@ -513,7 +516,7 @@ function clicked_9(){
 			document.getElementById("text").innerHTML = str+"y"
 		}else if(lastPressed==9 && numOfSamePresses%4 == 3){					//fast press and fourth letter
 			str=str.slice(0,-1)
-			document.getElementById("text").innerHTML = str+"z"	
+			document.getElementById("text").innerHTML = str+"z"
 		}else{
 			str=str.slice(0,-1)												//fast press back to first letter
 			document.getElementById("text").innerHTML = str+"w"
@@ -529,7 +532,7 @@ function clicked_9(){
 	}else{
 		document.getElementById("text").innerHTML += "w"
 		tnine()
-		addSpace()		
+		addSpace()
 	}
 }
 function clicked_star(){
@@ -564,7 +567,7 @@ function clicked_sharp(){
 		timeout=setTimeout(function(){
 			activeTyping=false
 		}, DELAY_THRESHOLD)
-	clearUnderline()	
+	clearUnderline()
 }
 function clicked_clear(){
 	clearSpace()
@@ -604,12 +607,12 @@ function clicked_play(){
 		calculateCps()
 		str="▶"				//arrow
 		clearTimeout(t);
-		
+
 	}
 	document.getElementsByClassName("play")[0].innerHTML=str
 	stopwatchStart= new Date()
-	
-	
+
+
 }
 function calculateCps(){
 	str = document.getElementById("text").innerHTML
@@ -617,12 +620,7 @@ function calculateCps(){
 	cps = Math.round(len/(seconds/60 + minutes))
 	if(cps > 9000) cps =0
 	document.getElementsByClassName("wpm")[0].innerHTML = cps+" cpm"
-	
+
 }
 
 window.onload = startTime
-
-
-
-
-
