@@ -90,21 +90,66 @@ background-size: cover;
 	padding: 0px;
 	width: 68px;
 }
-.mobile{
+.mobile1{
 	/*background-color: #44a9b8;*/
 	/*http://www.css3factory.com/linear-gradients/*/
 	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0, #44A9B8),
-		color-stop(1, #CFF9FF)
-	);
-background-image: -o-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
-background-image: -moz-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
-background-image: -webkit-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
-background-image: -ms-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
-background-image: linear-gradient(to bottom, #44A9B8 0%, #CFF9FF 100%);
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #44A9B8),
+			color-stop(1, #CFF9FF)
+		);
+	background-image: -o-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+	background-image: -moz-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+	background-image: -webkit-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+	background-image: -ms-linear-gradient(bottom, #44A9B8 0%, #CFF9FF 100%);
+	background-image: linear-gradient(to bottom, #44A9B8 0%, #CFF9FF 100%);
+}
+.mobile2{
+	/*background-color: #44a9b8;*/
+	/*http://www.css3factory.com/linear-gradients/*/
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #ca1010),
+			color-stop(1, #f9d5d5)
+		);
+	background-image: -o-linear-gradient(bottom, #ca1010 0%, #f9d5d5 100%);
+	background-image: -moz-linear-gradient(bottom, #ca1010 0%, #f9d5d5 100%);
+	background-image: -webkit-linear-gradient(bottom, #ca1010 0%, #f9d5d5 100%);
+	background-image: -ms-linear-gradient(bottom, #ca1010 0%, #f9d5d5 100%);
+	background-image: linear-gradient(to bottom, #ca1010 0%, #f9d5d5 100%);
+}
+.mobile3{
+	/*background-color: #44a9b8;*/
+	/*http://www.css3factory.com/linear-gradients/*/
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #20f100),
+			color-stop(1, #c8f9c1)
+		);
+	background-image: -o-linear-gradient(bottom, #20f100 0%, #c8f9c1 100%);
+	background-image: -moz-linear-gradient(bottom, #20f100 0%, #c8f9c1 100%);
+	background-image: -webkit-linear-gradient(bottom, #20f100 0%, #c8f9c1 100%);
+	background-image: -ms-linear-gradient(bottom, #20f100 0%, #c8f9c1 100%);
+	background-image: linear-gradient(to bottom, #20f100 0%, #c8f9c1 100%);
+}
+.mobile4{
+	background-color: #4c4c4c;
+}
+.mobile5{
+	background: url(img/rdne8yn.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mobile{
 	width: 330px;
 	/*height: 625px;*/
 	border: 2px solid #000000;
@@ -114,6 +159,8 @@ background-image: linear-gradient(to bottom, #44A9B8 0%, #CFF9FF 100%);
 	margin: auto;
 	margin-top: 10px;
 }
+
+
 .screen{
 	width: 305px;
 	/*height: 360px;*/

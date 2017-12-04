@@ -622,5 +622,15 @@ function calculateCps(){
 	document.getElementsByClassName("wpm")[0].innerHTML = cps+" cpm"
 
 }
+var skin = 1
+function change_color()
+{
+	skin++;
+	if (skin > 5)
+	{
+		skin=1
+	}
+	document.getElementById("mobile").className = "mobile mobile" + skin
+}
 
 window.onload = startTime
