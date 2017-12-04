@@ -626,7 +626,7 @@ var skin = 1
 function change_color()
 {
 	skin++;
-	if (skin > 5)
+	if (skin > 6)
 	{
 		skin=1
 	}

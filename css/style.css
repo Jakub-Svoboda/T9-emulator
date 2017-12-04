@@ -148,7 +148,9 @@ background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
+.mobile6{
+	background-color: #000;
+}
 .mobile{
 	width: 330px;
 	/*height: 625px;*/
@@ -195,6 +197,7 @@ background-size: cover;
 	border: 1px solid #000000;
 	border-radius: 3px;
 	background-color: #e6e6e6;
+	width: 75px;
 }
 .wpm:hover{
 	cursor:default;
