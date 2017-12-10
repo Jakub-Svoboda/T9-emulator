@@ -1,3 +1,9 @@
+/*Course: User interface programming
+ *Authors:
+ * Jakub Svoboda (xsvobo0z) - Buttons and timer logic implementation
+ * Kateřina Šmajzrová (xsmajz00) - Style changing button logic implementation
+ * Michael Schmid (xschmi08) - T9 function logic and word rotation implementation
+ */
 const DELAY_THRESHOLD = 1000
 var t9 = true
 var startTime, endTime
