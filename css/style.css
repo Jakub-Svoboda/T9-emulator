@@ -1,10 +1,4 @@
 body {
-	/* background: #e2e2e3; */
-/* background: #eeeeee; */
-/*background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 57%);*/
-/* background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 57%); */
-/* background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 57%); */
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );*/
 	/*zdroj pozadi: https://i.ytimg.com/vi/BdIQJR7GPtQ/maxresdefault.jpg*/
 background: url(img/maxresdefault.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -91,7 +85,6 @@ background-size: cover;
 	width: 68px;
 }
 .mobile1{
-	/*background-color: #44a9b8;*/
 	/*http://www.css3factory.com/linear-gradients/*/
 	background-image: -webkit-gradient(
 			linear,
@@ -107,8 +100,7 @@ background-size: cover;
 	background-image: linear-gradient(to bottom, #44A9B8 0%, #CFF9FF 100%);
 }
 .mobile2{
-	/*background-color: #44a9b8;*/
-	/*http://www.css3factory.com/linear-gradients/*/
+		/*http://www.css3factory.com/linear-gradients/*/
 	background-image: -webkit-gradient(
 			linear,
 			left top,
@@ -123,8 +115,7 @@ background-size: cover;
 	background-image: linear-gradient(to bottom, #ca1010 0%, #f9d5d5 100%);
 }
 .mobile3{
-	/*background-color: #44a9b8;*/
-	/*http://www.css3factory.com/linear-gradients/*/
+		/*http://www.css3factory.com/linear-gradients/*/
 	background-image: -webkit-gradient(
 			linear,
 			left top,
@@ -142,6 +133,7 @@ background-size: cover;
 	background-color: #4c4c4c;
 }
 .mobile5{
+	/*zdroj pozadi: */
 	background: url(img/rdne8yn.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -153,7 +145,6 @@ background-size: cover;
 }
 .mobile{
 	width: 330px;
-	/*height: 625px;*/
 	border: 2px solid #000000;
 	border-radius: 8px;
 	padding: 5px;
@@ -165,12 +156,9 @@ background-size: cover;
 
 .screen{
 	width: 305px;
-	/*height: 360px;*/
 	color: black;
   border: 2px solid #000000;
 	margin: 15px 5px 5px;
-	/*border-radius: 8px;*/
-	/*background-color: #f9f9f9;*/
 	background-color: #e6e6e6;
 }
 .keyboard{
